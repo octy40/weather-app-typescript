@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Day from './components/day/day';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>Weather</p>
+        <input type="text" placeholder="Enter city"/>
+        <button>Submit</button>
+      </header>      
+      <Day day='Tuesday' dayMaxTemperature={50} dayMinTemperature={8}/>
+      <Day day='Wednesday' dayMaxTemperature={50} dayMinTemperature={8}/>
+      <Day day='Thursday' dayMaxTemperature={50} dayMinTemperature={8}/>
+      <Day day='Friday' dayMaxTemperature={50} dayMinTemperature={8}/>
+      <Day day='Saturday' dayMaxTemperature={50} dayMinTemperature={8}/>
     </div>
   );
 }
